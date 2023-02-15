@@ -72,5 +72,8 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+      id: codeql
       with:
         category: "/language:${{matrix.language}}"
+    - name: GetOut
+      run: echo ${{ steps.codeql.outputs }}
