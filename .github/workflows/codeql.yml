@@ -76,5 +76,5 @@ jobs:
       with:
         category: "/language:${{matrix.language}}"
     - name: GetOut
-      run: echo ${{ steps.codeql.outputs }}
-           cat results.sarif
+      run: cat results.sarif
+           
