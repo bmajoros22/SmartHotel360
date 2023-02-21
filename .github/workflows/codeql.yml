@@ -76,5 +76,6 @@ jobs:
       id: codeql
       with:
         category: "/language:${{matrix.language}}"
+        queries: +security-and-quality
 
            
